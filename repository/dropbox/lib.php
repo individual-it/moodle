@@ -240,7 +240,7 @@ class repository_dropbox extends repository {
      *
      * @inheritDocs
      */
-    public function get_listing($path = '', $page = '1') {
+    public function get_listing(string $path = '', string $page = '1') {
         if (empty($path) || $path == '/') {
             $path = '';
         } else {

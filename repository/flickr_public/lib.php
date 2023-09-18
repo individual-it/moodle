@@ -348,17 +348,17 @@ class repository_flickr_public extends repository {
      * return an image list
      *
      * @param string $path
-     * @param int $page
+     * @param string  $page
      * @return array
      */
-    public function get_listing($path = '', $page = 1) {
+    public function get_listing(string $path = '', string $page = '1') {
         $people = $this->flickr->people_findByEmail($this->flickr_account);
         $this->nsid = $people['nsid'];
         $photos = $this->flickr->people_getPublicPhotos($people['nsid'], 'original_format,license,date_upload,last_update',
-            24, $page);
+            24, (int)$page);
         $ret = array();
 
-        return $this->build_list($photos, $page, $ret);
+        return $this->build_list($photos, (int)$page, $ret);
     }
 
     /**

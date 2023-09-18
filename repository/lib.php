@@ -2194,7 +2194,7 @@ abstract class repository implements cacheable_object {
      *           list, file list
      *           path, current path and parent path
      */
-    public function get_listing($path = '', $page = '') {
+    public function get_listing(string $path = '', string $page = '') {
     }
 
 

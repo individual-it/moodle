@@ -77,7 +77,7 @@ class repository_wikimedia extends repository {
         return $pref;
     }
 
-    public function get_listing($path = '', $page = '') {
+    public function get_listing(string $path = '', string $page = '') {
         $client = new wikimedia;
         $list = array();
         $list['page'] = (int)$page;

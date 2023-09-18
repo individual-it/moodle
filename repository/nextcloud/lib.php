@@ -256,7 +256,7 @@ class repository_nextcloud extends repository {
      * @param string $page page number (given multiple pages of elements).
      * @return array directory properties.
      */
-    public function get_listing($path='', $page = '') {
+    public function get_listing(string $path='', string $page = '') {
         if (empty($path)) {
             $path = '/';
         }

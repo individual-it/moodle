@@ -97,7 +97,7 @@ class repository_webdav extends repository {
     public function global_search() {
         return false;
     }
-    public function get_listing($path='', $page = '') {
+    public function get_listing(string $path='', string $page = '') {
         global $CFG, $OUTPUT;
         $list = array();
         $ret  = array();

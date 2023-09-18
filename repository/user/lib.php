@@ -50,7 +50,7 @@ class repository_user extends repository {
      * @param string $encodedpath
      * @return mixed
      */
-    public function get_listing($encodedpath = '', $page = '') {
+    public function get_listing(string $encodedpath = '', string $page = '') {
         global $CFG, $USER, $OUTPUT;
         $ret = array();
         $ret['dynload'] = true;

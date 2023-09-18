@@ -290,7 +290,7 @@ class repository_flickr extends repository {
      * @param int $page
      * @return array
      */
-    public function get_listing($path = '', $page = '') {
+    public function get_listing(string $path = '', string $page = '') {
         return $this->search('', $page);
     }
 

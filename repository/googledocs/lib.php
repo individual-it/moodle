@@ -264,7 +264,7 @@ class repository_googledocs extends repository {
      * @param  string $page page to browse.
      * @return array of result.
      */
-    public function get_listing($path='', $page = '') {
+    public function get_listing(string $path='', string $page = '') {
         if (empty($path)) {
             $pluginname = get_string('pluginname', 'repository_googledocs');
             $path = helper::build_node_path('repository_root', $pluginname);

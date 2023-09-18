@@ -61,10 +61,10 @@ class repository_equella extends repository {
      * Display embedded equella interface
      *
      * @param string $path
-     * @param mixed $page
+     * @param string $page
      * @return array
      */
-    public function get_listing($path = null, $page = null) {
+    public function get_listing(string $path = '', string $page = '') {
         global $COURSE;
         $callbackurl = new moodle_url('/repository/equella/callback.php', array('repo_id'=>$this->id));
 

@@ -256,7 +256,7 @@ class dropbox extends client {
      * @param   string      $path       The path to query
      * @return  object                  The returned directory listing, or null on failure
      */
-    public function get_listing($path = '') {
+    public function get_listing(string $path = '') {
         if ($path === '/') {
             $path = '';
         }

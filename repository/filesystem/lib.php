@@ -64,7 +64,7 @@ class repository_filesystem extends repository {
      * @param string $page Page number.
      * @return array List of files and folders.
      */
-    public function get_listing($fullpath = '', $page = '') {
+    public function get_listing(string $fullpath = '', string $page = '') {
         global $OUTPUT;
 
         $list = array(

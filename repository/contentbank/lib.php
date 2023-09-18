@@ -42,7 +42,7 @@ class repository_contentbank extends repository {
      * @param string $page
      * @return array
      */
-    public function get_listing($encodedpath = '', $page = '') {
+    public function get_listing(string $encodedpath = '', string $page = '') {
         global $SITE;
 
         $ret = [];
