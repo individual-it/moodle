@@ -99,7 +99,7 @@ EOD;
      * @param string $search
      * @return array
      */
-    public function get_listing($path='', $page='') {
+    public function get_listing(string $path='', string $page='') {
         $ret = array();
         $ret['list'] = array();
         $ret['nosearch'] = true;

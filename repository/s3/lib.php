@@ -112,7 +112,7 @@ class repository_s3 extends repository {
      * @param string $path
      * @return array The file list and options
      */
-    public function get_listing($path = '', $page = '') {
+    public function get_listing(string $path = '', string $page = '') {
         global $CFG, $OUTPUT;
         if (empty($this->access_key)) {
             throw new moodle_exception('needaccesskey', 'repository_s3');

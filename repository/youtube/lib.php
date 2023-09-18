@@ -247,7 +247,7 @@ class repository_youtube extends repository {
         return false;
     }
 
-    public function get_listing($path='', $page = '') {
+    public function get_listing(string $path='', string $page = '') {
         return array();
     }
 

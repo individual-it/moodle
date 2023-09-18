@@ -50,7 +50,7 @@ class repository_areafiles extends repository {
      * @param string $path not used by this plugin
      * @return mixed
      */
-    public function get_listing($path = '', $page = '') {
+    public function get_listing(string $path = '', string $page = '') {
         global $USER, $OUTPUT;
         $itemid = optional_param('itemid', 0, PARAM_INT);
         $env = optional_param('env', 'filepicker', PARAM_ALPHA);

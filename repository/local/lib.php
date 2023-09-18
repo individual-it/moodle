@@ -41,7 +41,7 @@ class repository_local extends repository {
      * @param string $page no paging is used in repository_local
      * @return mixed
      */
-    public function get_listing($encodedpath = '', $page = '') {
+    public function get_listing(string $encodedpath = '', string $page = '') {
         global $CFG, $USER, $OUTPUT;
         $ret = array();
         $ret['dynload'] = true;

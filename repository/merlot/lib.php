@@ -87,7 +87,7 @@ class repository_merlot extends repository {
      * Get a list of links
      * @return array
      */
-    public function get_listing($path = '', $page = '') {
+    public function get_listing(string $path = '', string $page = '') {
         $ret  = array();
         $ret['nologin'] = true;
         $ret['list'] = $this->_get_collection($this->keyword);

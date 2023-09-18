@@ -138,7 +138,7 @@ class repository_recent extends repository {
      * @param string $path not used by this plugin
      * @return mixed
      */
-    public function get_listing($encodedpath = '', $page = '') {
+    public function get_listing(string $encodedpath = '', string $page = '') {
         global $OUTPUT;
         $ret = array();
         $ret['dynload'] = true;
