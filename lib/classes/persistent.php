@@ -17,6 +17,7 @@
 namespace core;
 
 use coding_exception;
+use dml_exception;
 use invalid_parameter_exception;
 use lang_string;
 use ReflectionMethod;
@@ -48,6 +49,7 @@ abstract class persistent {
      *
      * @param int $id If set, this is the id of an existing record, used to load the data.
      * @param stdClass $record If set will be passed to {@link self::from_record()}.
+     * @throws coding_exception|dml_exception
      */
     public function __construct($id = 0, stdClass $record = null) {
         global $CFG;
@@ -451,6 +453,7 @@ abstract class persistent {
      * Load the data from the DB.
      *
      * @return static
+     * @throws dml_exception|coding_exception
      */
     final public function read() {
         global $DB;
