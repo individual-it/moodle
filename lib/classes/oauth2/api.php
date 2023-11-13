@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->libdir . '/filelib.php');
 
+use coding_exception;
+use dml_exception;
 use stdClass;
 use moodle_url;
 use context_system;
@@ -132,6 +134,7 @@ class api {
      *
      * @param int $id
      * @return \core\oauth2\issuer
+     * @throws coding_exception|dml_exception
      */
     public static function get_issuer($id) {
         return new issuer($id);
